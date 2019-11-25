@@ -4,8 +4,8 @@ namespace Reaktionsspelet
 {
     public class NumberGenerator
     {
-        int minValue = 3000;
-        int maxValue = 10000;
+        private int minValue = 3000;
+        private int maxValue = 10000;
 
         public int ReturnsARandomNumber()
         {
