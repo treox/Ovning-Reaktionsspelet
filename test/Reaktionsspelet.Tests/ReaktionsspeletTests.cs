@@ -35,5 +35,19 @@ namespace Reaktionsspelet.Tests
             Assert.True(randNum <= maxValue);
             
         }
+
+        [Fact]
+        public void TestingTickCount()
+        {
+            // arrange
+            int start = Environment.TickCount;
+
+            // act
+            Thread.Sleep(5000);
+            int duration = Environment.TickCount - start;
+
+            // assert
+            Assert.True(duration <= 5020);
+        }
     }
 }
